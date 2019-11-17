@@ -36,10 +36,11 @@ export const profileAPI = {
     },
     updateStatus(status){
         return  instance.put(`profile/status`, {status:status})
-    },
+    }
 };
+
 export const authAPI = {
     getAuthMe(){
         return instance.get(`auth/me`)
     }
-}
+};
